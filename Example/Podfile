@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Reveal_Example' do
+  pod 'Reveal', :path => '../'
+
+  target 'Reveal_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
