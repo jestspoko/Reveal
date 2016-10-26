@@ -1,0 +1,6 @@
+framework module Pods_Reveal_Example {
+  umbrella header "Pods-Reveal_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

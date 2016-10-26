@@ -5,25 +5,67 @@
 [![License](https://img.shields.io/cocoapods/l/Reveal.svg?style=flat)](http://cocoapods.org/pods/Reveal)
 [![Platform](https://img.shields.io/cocoapods/p/Reveal.svg?style=flat)](http://cocoapods.org/pods/Reveal)
 
-## Example
+# Description
+Reveal is small untility to perform reveal/hide animation on UILabel.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+# Installation
+### CocoaPods
+To install add following line to your Podfile:
 
-## Requirements
+`pod Reveal`
 
-## Installation
+# How To Use Reveal
 
-Reveal is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### 1) Create instance of Reval and define some options
 
-```ruby
-pod "Reveal"
-```
+`let reveal = Reveal(options:[.direction(.fromLeft), .speed(2)])`
 
-## Author
+### 2) Pass label instance
 
-Lukasz Czechowicz, jestspoko@gmail.com
+`reveal.add(someLabel)`
 
-## License
+### 3) Reveal lable when ready!
 
-Reveal is available under the MIT license. See the LICENSE file for more info.
+`reveal.reveal()`
+
+### 4) To reverse animation call:
+
+`hide()`
+
+# Features
+
+### You can pass array of labels and Reveal show them in order
+
+`let reveal = Reveal(options:[.delay(0.6)])
+reveal.add([label1, label2, label3])
+reveal.reveal()`
+
+### If you want to know when animation ended add completion handler
+
+`reveal.reveal {
+print("all labels are visible now.")
+}`
+
+### If you want to know when animation ended add completion handler
+
+`reveal.reveal {
+print("all labels are visible now.")
+}`
+
+### You can track when particular animation ended
+
+`reveal.reveal { index in
+print("label at \(index) is visible now.")
+}`
+
+# Options
+- animation speed in speconds
+`speed(Double)`
+- delay in seconds between animations
+`delay(Double)`
+- Edge where animation starts from
+`direction(RevealDirection)`
+
+# Update Log
+### 0.3 Release (26.10.2016)
+- first release

@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import Reveal
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let r = Reveal(options: [ .delay(12),
+                                  .direction(.fromLeft)])
+        r.reveal { (index) in
+            
+        }
+        
+        r.update(text: "")
     }
 
     override func didReceiveMemoryWarning() {

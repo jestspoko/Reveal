@@ -1,0 +1,16 @@
+PODS:
+  - Reveal (0.1.0)
+
+DEPENDENCIES:
+  - Reveal (from `../`)
+
+EXTERNAL SOURCES:
+  Reveal:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Reveal: 745ce629916a18929a42791c02cb0efbec9cb636
+
+PODFILE CHECKSUM: 51dd797ebce10ed7aa0df845b3223d53e1260ef5
+
+COCOAPODS: 1.1.1
