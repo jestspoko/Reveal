@@ -4,7 +4,7 @@
 ### Description
 Reveal is small utility to perform reveal/hide animation on UILabel.
 
-![alt text](demo.gif)
+<img src="demo.gif" width="350">
 
 ### Installation - CocoaPods
 To install add following line to your Podfile:
